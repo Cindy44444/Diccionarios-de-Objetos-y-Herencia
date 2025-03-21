@@ -15,8 +15,10 @@ namespace Diccionarios_de_Objetos_y_Herencia
 
         public void AddAuto()
         {
-            Console.WriteLine("Dame iD");
+            Console.WriteLine("Dame matricula");
             int iD = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Dame id");
+            vau.ID = Convert.ToInt32(Console.ReadLine());
             vau.ID = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Dame Marca");
             vau.Marca = Console.ReadLine();
@@ -34,8 +36,10 @@ namespace Diccionarios_de_Objetos_y_Herencia
         }
         public void AddMoto()
         {
-            Console.WriteLine("Dame iD");
+            Console.WriteLine("Dame matricula");
             int iD = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Dame ID");
+            vmo.ID = Convert.ToInt32(Console.ReadLine());
             vmo.ID = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Dame Marca");
             vmo.Marca = Console.ReadLine();
@@ -51,7 +55,17 @@ namespace Diccionarios_de_Objetos_y_Herencia
             diccionarioMotos.Add(iD, new VehículoMotos(vmo.ID, vmo.Marca, vmo.Modelo, vmo.Año, vmo.Escape, vmo.Motor));
 
         }
-
+        public void MostrarCoche()
+        {
+            foreach (var coch in diccionarioCoche)
+            {
+                Console.WriteLine($"ID:{coch.Value.ID}");
+                Console.WriteLine($"Marca:{coch.Value.Marca}");
+                Console.WriteLine($"Modelo:{coch.Value.Año}");
+                Console.WriteLine($"Número de puertas:{coch.Value.Numpuertas}");
+                Console.WriteLine($"Color:{coch.Value.Color}");
+            }
+        }
 
     }
 }
