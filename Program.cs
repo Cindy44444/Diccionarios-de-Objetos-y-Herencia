@@ -8,7 +8,7 @@ namespace Diccionarios_de_Objetos_y_Herencia
 {
     public enum Menu
     {
-        AgregarCoche=1,AgregarMoto, MostrarVehiculos, ActualizarCoche,ActualizarMoto, EliminarCoche,EliminarMoto
+        AgregarCoche=1,AgregarMoto, MostrarAutos,MostrarMotos, ActualizarCoche,ActualizarMoto, EliminarCoche,EliminarMoto
     }
 
     internal class Program
@@ -27,8 +27,10 @@ namespace Diccionarios_de_Objetos_y_Herencia
                     case Menu.AgregarMoto:
                         controller.AddMoto();
                         break;
-                    case Menu.MostrarVehiculos:
+                    case Menu.MostrarAutos:
                         controller.MostrarCoche();
+                        break;
+                    case Menu.MostrarMotos:
                         controller.MostrarMoto();
                         break;
                     case Menu.ActualizarCoche:
@@ -50,7 +52,8 @@ namespace Diccionarios_de_Objetos_y_Herencia
         {
             Console.WriteLine("1)Agregar Coche:");
             Console.WriteLine("2)Agregar Moto:");
-            Console.WriteLine("3)Mostrar vehículos");
+            Console.WriteLine("3)Mostrar autos");
+            Console.WriteLine("Mostrar motos");
             Console.WriteLine("4)Modificar Coche:");
             Console.WriteLine("5)Modificar Moto:");
             Console.WriteLine("6)Eliminar Coche:");
