@@ -112,6 +112,25 @@ namespace Diccionarios_de_Objetos_y_Herencia
             Console.WriteLine("Dame color:");
             coche.Value.Color = Console.ReadLine();
         }
+        public void ActualizarMoto()
+        {
+            Console.WriteLine("Dame id a actualizar:");
+            int id = Convert.ToInt32(Console.ReadLine());
+            var moto = diccionarioMotos.FirstOrDefault(x =>x.Value.ID == id);
+
+            Console.WriteLine("Dame nuevo id:");
+            moto.Value.ID = Convert.ToInt32( Console.ReadLine());
+            Console.WriteLine("Dame marca:");
+            moto.Value.Marca = Console.ReadLine();
+            Console.WriteLine("Dame modelo:");
+            moto.Value.Modelo = Console.ReadLine();
+            Console.WriteLine("Dame año:");
+            moto.Value.Año = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Dame escape:");
+            moto.Value.Escape = Console.ReadLine();
+            Console.WriteLine("Dame motor:");
+            moto.Value.Motor = Console.ReadLine();
+        }
 
     }
 }
