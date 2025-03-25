@@ -22,18 +22,26 @@ namespace Diccionarios_de_Objetos_y_Herencia
                 switch (menu())
                 {
                     case Menu.AgregarCoche:
+                        controller.AddAuto();
                         break;
                     case Menu.AgregarMoto:
+                        controller.AddMoto();
                         break;
                     case Menu.MostrarVehiculos:
+                        controller.MostrarCoche();
+                        controller.MostrarMoto();
                         break;
                     case Menu.ActualizarCoche:
+                        controller.ActualizarCoche();
                         break;
                     case Menu.ActualizarMoto:
+                        controller.ActualizarMoto();
                         break;
                     case Menu.EliminarCoche:
+                        controller.EliminarCoche();
                         break;
                     case Menu.EliminarMoto:
+                        controller.EliminarMOTOS();
                         break;
                 }
             }
