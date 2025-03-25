@@ -48,13 +48,13 @@ namespace Diccionarios_de_Objetos_y_Herencia
         }
         static Menu menu()
         {
-            Console.WriteLine("Agregar Coche:");
-            Console.WriteLine("Agregar Moto:");
-            Console.WriteLine("Mostrar vehículos");
-            Console.WriteLine("Modificar Coche:");
-            Console.WriteLine("Modificar Moto:");
-            Console.WriteLine("Eliminar Coche:");
-            Console.WriteLine("Eliminar Moto:");
+            Console.WriteLine("1)Agregar Coche:");
+            Console.WriteLine("2)Agregar Moto:");
+            Console.WriteLine("3)Mostrar vehículos");
+            Console.WriteLine("4)Modificar Coche:");
+            Console.WriteLine("5)Modificar Moto:");
+            Console.WriteLine("6)Eliminar Coche:");
+            Console.WriteLine("7)Eliminar Moto:");
             Menu opc = (Menu)Convert.ToInt32(Console.ReadLine());
             return opc;
         }

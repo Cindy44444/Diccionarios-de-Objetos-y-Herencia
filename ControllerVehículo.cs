@@ -16,9 +16,8 @@ namespace Diccionarios_de_Objetos_y_Herencia
         public void AddAuto()
         {
             Console.WriteLine("Dame matricula");
-            int iD = Convert.ToInt32(Console.ReadLine());
+            int id = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Dame id");
-            vau.ID = Convert.ToInt32(Console.ReadLine());
             vau.ID = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Dame Marca");
             vau.Marca = Console.ReadLine();
@@ -32,14 +31,13 @@ namespace Diccionarios_de_Objetos_y_Herencia
             vau.Color = Console.ReadLine();
            
 
-            diccionarioCoche.Add(iD, new VehículoAuto(vau.ID,vau.Marca,vau.Modelo,vau.Año,vau.Numpuertas,vau.Color));
+            diccionarioCoche.Add(id, new VehículoAuto(vau.ID,vau.Marca,vau.Modelo,vau.Año,vau.Numpuertas,vau.Color));
         }
         public void AddMoto()
         {
             Console.WriteLine("Dame matricula");
-            int iD = Convert.ToInt32(Console.ReadLine());
+            int id = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Dame ID");
-            vmo.ID = Convert.ToInt32(Console.ReadLine());
             vmo.ID = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Dame Marca");
             vmo.Marca = Console.ReadLine();
@@ -52,7 +50,7 @@ namespace Diccionarios_de_Objetos_y_Herencia
             Console.WriteLine("Dame Motor");
             vmo.Motor = Console.ReadLine();
 
-            diccionarioMotos.Add(iD, new VehículoMotos(vmo.ID, vmo.Marca, vmo.Modelo, vmo.Año, vmo.Escape, vmo.Motor));
+            diccionarioMotos.Add(id, new VehículoMotos(vmo.ID, vmo.Marca, vmo.Modelo, vmo.Año, vmo.Escape, vmo.Motor));
 
         }
         public void MostrarCoche()
@@ -97,10 +95,10 @@ namespace Diccionarios_de_Objetos_y_Herencia
         {
             Console.WriteLine("Dame id a actualizar");
             int id = Convert.ToInt32( Console.ReadLine());
-            var coche = diccionarioCoche.FirstOrDefault(x => x.Value.ID == id);
+            var coche = diccionarioCoche.FirstOrDefault(x => x.Value.iD == id);
 
             Console.WriteLine("Dame nuevo id:");
-            coche.Value.ID = Convert.ToInt32( Console.ReadLine());
+            coche.Value.iD = Convert.ToInt32( Console.ReadLine());
             Console.WriteLine("Dame marca:");
             coche.Value.Marca = Console.ReadLine();
             Console.WriteLine("Dame modelo:");
