@@ -61,10 +61,42 @@ namespace Diccionarios_de_Objetos_y_Herencia
             {
                 Console.WriteLine($"ID:{coch.Value.ID}");
                 Console.WriteLine($"Marca:{coch.Value.Marca}");
-                Console.WriteLine($"Modelo:{coch.Value.Año}");
+                Console.WriteLine($"Modelo:{coch.Value.Modelo}");
+                Console.WriteLine($"Año:{coch.Value.Año}");
                 Console.WriteLine($"Número de puertas:{coch.Value.Numpuertas}");
                 Console.WriteLine($"Color:{coch.Value.Color}");
             }
+        }
+        public void MostrarMoto()
+        {
+            foreach(var mo in diccionarioMotos)
+            {
+                Console.WriteLine($"ID:{mo.Value.ID}");
+                Console.WriteLine($"Marca:{mo.Value.Marca}");
+                Console.WriteLine($"Modelo:{mo.Value.Modelo}");
+                Console.WriteLine($"Año: {mo.Value.Año}");
+                Console.WriteLine($"Escape:{mo.Value.Escape}");
+                Console.WriteLine($"Motor: {mo.Value.Motor}");
+            }
+        }
+        public void EliminarCoche()
+        {
+            Console.WriteLine("Dame id a eliminar:");
+            int id = Convert.ToInt32( Console.ReadLine());
+
+            diccionarioCoche.Remove(id);
+        }
+        public void EliminarMOTOS()
+        {
+            Console.WriteLine("Dame id a eliminar");
+            int id = Convert.ToInt32( Console.ReadLine());
+
+            diccionarioMotos.Remove(id);
+        }
+        public void ActualizarCoche()
+        {
+            Console.WriteLine("Dame id a actualizar");
+            int id = Convert.ToInt32( Console.ReadLine() );
         }
 
     }
