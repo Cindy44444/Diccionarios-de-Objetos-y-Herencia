@@ -55,26 +55,26 @@ namespace Diccionarios_de_Objetos_y_Herencia
         }
         public void MostrarCoche()
         {
-            foreach (var coch in diccionarioCoche)
+            foreach (var vau in diccionarioCoche)
             {
-                Console.WriteLine($"ID:{coch.Value.ID}");
-                Console.WriteLine($"Marca:{coch.Value.Marca}");
-                Console.WriteLine($"Modelo:{coch.Value.Modelo}");
-                Console.WriteLine($"Año:{coch.Value.Año}");
-                Console.WriteLine($"Número de puertas:{coch.Value.Numpuertas}");
-                Console.WriteLine($"Color:{coch.Value.Color}");
+                Console.WriteLine($"ID:{vau.Value.ID}");
+                Console.WriteLine($"Marca:{vau.Value.Marca}");
+                Console.WriteLine($"Modelo:{vau.Value.Modelo}");
+                Console.WriteLine($"Año:{vau.Value.Año}");
+                Console.WriteLine($"Número de puertas:{vau.Value.Numpuertas}");
+                Console.WriteLine($"Color:{vau.Value.Color}");
             }
         }
         public void MostrarMoto()
         {
-            foreach(var mo in diccionarioMotos)
+            foreach(var vmo in diccionarioMotos)
             {
-                Console.WriteLine($"ID:{mo.Value.ID}");
-                Console.WriteLine($"Marca:{mo.Value.Marca}");
-                Console.WriteLine($"Modelo:{mo.Value.Modelo}");
-                Console.WriteLine($"Año: {mo.Value.Año}");
-                Console.WriteLine($"Escape:{mo.Value.Escape}");
-                Console.WriteLine($"Motor: {mo.Value.Motor}");
+                Console.WriteLine($"ID:{vmo.Value.ID}");
+                Console.WriteLine($"Marca:{vmo.Value.Marca}");
+                Console.WriteLine($"Modelo:{vmo.Value.Modelo}");
+                Console.WriteLine($"Año: {vmo.Value.Año}");
+                Console.WriteLine($"Escape:{vmo.Value.Escape}");
+                Console.WriteLine($"Motor: {vmo.Value.Motor}");
             }
         }
         public void EliminarCoche()
