@@ -96,7 +96,21 @@ namespace Diccionarios_de_Objetos_y_Herencia
         public void ActualizarCoche()
         {
             Console.WriteLine("Dame id a actualizar");
-            int id = Convert.ToInt32( Console.ReadLine() );
+            int id = Convert.ToInt32( Console.ReadLine());
+            var coche = diccionarioCoche.FirstOrDefault(x => x.Value.ID == id);
+
+            Console.WriteLine("Dame nuevo id:");
+            coche.Value.ID = Convert.ToInt32( Console.ReadLine());
+            Console.WriteLine("Dame marca:");
+            coche.Value.Marca = Console.ReadLine();
+            Console.WriteLine("Dame modelo:");
+            coche.Value.Modelo = Console.ReadLine();
+            Console.WriteLine("Dame año:");
+            coche.Value.Año = Convert.ToInt32( Console.ReadLine());
+            Console.WriteLine("Dame numero d puertas:");
+            coche.Value.Numpuertas = Convert.ToInt32( Console.ReadLine());
+            Console.WriteLine("Dame color:");
+            coche.Value.Color = Console.ReadLine();
         }
 
     }
