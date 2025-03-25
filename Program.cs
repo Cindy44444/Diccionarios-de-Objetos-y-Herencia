@@ -8,7 +8,7 @@ namespace Diccionarios_de_Objetos_y_Herencia
 {
     public enum Menu
     {
-        AgregarCoche=1,AgregarMoto, MostrarCoche,MostrarMoto, ActualizarCoche,ActualizarMoto, EliminarCoche,EliminarMoto
+        AgregarCoche=1,AgregarMoto, MostrarVehiculos, ActualizarCoche,ActualizarMoto, EliminarCoche,EliminarMoto
     }
 
     internal class Program
@@ -17,9 +17,24 @@ namespace Diccionarios_de_Objetos_y_Herencia
         {
             while (true)
             {
-                switch(Menu())
-                {
+                ControllerVehículo controller = new ControllerVehículo();
 
+                switch (menu())
+                {
+                    case Menu.AgregarCoche:
+                        break;
+                    case Menu.AgregarMoto:
+                        break;
+                    case Menu.MostrarVehiculos:
+                        break;
+                    case Menu.ActualizarCoche:
+                        break;
+                    case Menu.ActualizarMoto:
+                        break;
+                    case Menu.EliminarCoche:
+                        break;
+                    case Menu.EliminarMoto:
+                        break;
                 }
             }
         }
@@ -36,5 +51,5 @@ namespace Diccionarios_de_Objetos_y_Herencia
             return opc;
         }
     }
-    
+
 }
