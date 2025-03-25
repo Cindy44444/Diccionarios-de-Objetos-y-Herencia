@@ -95,10 +95,10 @@ namespace Diccionarios_de_Objetos_y_Herencia
         {
             Console.WriteLine("Dame id a actualizar");
             int id = Convert.ToInt32( Console.ReadLine());
-            var coche = diccionarioCoche.FirstOrDefault(x => x.Value.iD == id);
+            var coche = diccionarioCoche.FirstOrDefault(x => x.Value.ID == id);
 
             Console.WriteLine("Dame nuevo id:");
-            coche.Value.iD = Convert.ToInt32( Console.ReadLine());
+            coche.Value.ID = Convert.ToInt32( Console.ReadLine());
             Console.WriteLine("Dame marca:");
             coche.Value.Marca = Console.ReadLine();
             Console.WriteLine("Dame modelo:");
