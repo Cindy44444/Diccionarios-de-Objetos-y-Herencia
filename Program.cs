@@ -15,9 +15,9 @@ namespace Diccionarios_de_Objetos_y_Herencia
     {
         static void Main(string[] args)
         {
+            ControllerVehículo controller = new ControllerVehículo();
             while (true)
             {
-                ControllerVehículo controller = new ControllerVehículo();
 
                 switch (menu())
                 {
@@ -53,7 +53,7 @@ namespace Diccionarios_de_Objetos_y_Herencia
             Console.WriteLine("1)Agregar Coche:");
             Console.WriteLine("2)Agregar Moto:");
             Console.WriteLine("3)Mostrar autos");
-            Console.WriteLine("4Mostrar motos");
+            Console.WriteLine("4)Mostrar motos");
             Console.WriteLine("5)Modificar Coche:");
             Console.WriteLine("6)Modificar Moto:");
             Console.WriteLine("7)Eliminar Coche:");
